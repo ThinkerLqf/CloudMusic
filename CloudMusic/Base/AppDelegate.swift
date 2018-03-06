@@ -16,10 +16,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        window?.rootViewController = myTabBarVC
+        window?.makeKeyAndVisible()
+        
+        let welcomeVC = CMWelcomeVC()
+        myTabBarVC.present(welcomeVC, animated: false, completion: nil)
+        
         return true
     }
 
+    lazy var myTabBarVC: UITabBarController = {
+        let tabbarVC = UITabBarController()
+        
+        var vcs = [CMBaseNavigationController]()
+        
+        // 发现音乐
+        let findMusicVC = CMFindMusicVC()
+        let nav0 = CMBaseNavigationController(rootViewController: findMusicVC)
+        nav0.tabBarItem.title = "发现音乐"
+        vcs.append(nav0)
+        
+        // 我的音乐
+        let myMusicVC = CMMyMusicVC()
+        let nav1 = CMBaseNavigationController(rootViewController: myMusicVC)
+        nav1.tabBarItem.title = "我的音乐"
+        vcs.append(nav1)
+        
+        // 朋友
+        let friendVC = CMFriendVC()
+        let nav2 = CMBaseNavigationController(rootViewController: friendVC)
+        nav2.tabBarItem.title = "朋友"
+        vcs.append(nav2)
+        
+        // 账号
+        let accountVC = CMAccountVC()
+        let nav3 = CMBaseNavigationController(rootViewController: accountVC)
+        nav3.tabBarItem.title = "账号"
+        vcs.append(nav3)
+        
+        tabbarVC.viewControllers = vcs
+        
+        return tabbarVC
+    }()
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

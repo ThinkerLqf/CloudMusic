@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		DB89E38D204CEF9100E5EF57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB89E38C204CEF9100E5EF57 /* AppDelegate.swift */; };
-		DB89E38F204CEF9100E5EF57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB89E38E204CEF9100E5EF57 /* ViewController.swift */; };
-		DB89E392204CEF9100E5EF57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB89E390204CEF9100E5EF57 /* Main.storyboard */; };
 		DB89E395204CEF9100E5EF57 /* CloudMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB89E393204CEF9100E5EF57 /* CloudMusic.xcdatamodeld */; };
 		DB89E397204CEF9100E5EF57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB89E396204CEF9100E5EF57 /* Assets.xcassets */; };
-		DB89E39A204CEF9100E5EF57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB89E398204CEF9100E5EF57 /* LaunchScreen.storyboard */; };
 		DB89E3A5204CEF9100E5EF57 /* CloudMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB89E3A4204CEF9100E5EF57 /* CloudMusicTests.swift */; };
 		DB89E3B0204CEF9100E5EF57 /* CloudMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB89E3AF204CEF9100E5EF57 /* CloudMusicUITests.swift */; };
+		DBE3A0B4204E8945000D454B /* CMBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A0B3204E8945000D454B /* CMBaseNavigationController.swift */; };
+		DBE3A0CA204E8B88000D454B /* CMBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A0C9204E8B88000D454B /* CMBaseVC.swift */; };
+		DBE3A0CC204E8BC3000D454B /* CMFindMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A0CB204E8BC3000D454B /* CMFindMusicVC.swift */; };
+		DBE3A0CE204E8C02000D454B /* CMMyMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A0CD204E8C02000D454B /* CMMyMusicVC.swift */; };
+		DBE3A0D0204E8C17000D454B /* CMFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A0CF204E8C17000D454B /* CMFriendVC.swift */; };
+		DBE3A0D2204E8C2C000D454B /* CMAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A0D1204E8C2C000D454B /* CMAccountVC.swift */; };
+		DBE3A0D9204E91B4000D454B /* CMWelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A0D8204E91B4000D454B /* CMWelcomeVC.swift */; };
+		DBE3A0DB204E94BF000D454B /* CMGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A0DA204E94BF000D454B /* CMGuideView.swift */; };
+		DBE3A0DD204E9684000D454B /* CMKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A0DC204E9684000D454B /* CMKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +43,8 @@
 /* Begin PBXFileReference section */
 		DB89E389204CEF9100E5EF57 /* CloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB89E38C204CEF9100E5EF57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB89E38E204CEF9100E5EF57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB89E391204CEF9100E5EF57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB89E394204CEF9100E5EF57 /* CloudMusic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudMusic.xcdatamodel; sourceTree = "<group>"; };
 		DB89E396204CEF9100E5EF57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB89E399204CEF9100E5EF57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB89E39B204CEF9100E5EF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB89E3A0204CEF9100E5EF57 /* CloudMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB89E3A4204CEF9100E5EF57 /* CloudMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudMusicTests.swift; sourceTree = "<group>"; };
@@ -49,6 +52,15 @@
 		DB89E3AB204CEF9100E5EF57 /* CloudMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB89E3AF204CEF9100E5EF57 /* CloudMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudMusicUITests.swift; sourceTree = "<group>"; };
 		DB89E3B1204CEF9100E5EF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBE3A0B3204E8945000D454B /* CMBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMBaseNavigationController.swift; sourceTree = "<group>"; };
+		DBE3A0C9204E8B88000D454B /* CMBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMBaseVC.swift; sourceTree = "<group>"; };
+		DBE3A0CB204E8BC3000D454B /* CMFindMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMFindMusicVC.swift; sourceTree = "<group>"; };
+		DBE3A0CD204E8C02000D454B /* CMMyMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMMyMusicVC.swift; sourceTree = "<group>"; };
+		DBE3A0CF204E8C17000D454B /* CMFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMFriendVC.swift; sourceTree = "<group>"; };
+		DBE3A0D1204E8C2C000D454B /* CMAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMAccountVC.swift; sourceTree = "<group>"; };
+		DBE3A0D8204E91B4000D454B /* CMWelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMWelcomeVC.swift; sourceTree = "<group>"; };
+		DBE3A0DA204E94BF000D454B /* CMGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMGuideView.swift; sourceTree = "<group>"; };
+		DBE3A0DC204E9684000D454B /* CMKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,7 @@
 				DB89E38A204CEF9100E5EF57 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		DB89E38A204CEF9100E5EF57 /* Products */ = {
 			isa = PBXGroup;
@@ -99,11 +112,13 @@
 		DB89E38B204CEF9100E5EF57 /* CloudMusic */ = {
 			isa = PBXGroup;
 			children = (
-				DB89E38C204CEF9100E5EF57 /* AppDelegate.swift */,
-				DB89E38E204CEF9100E5EF57 /* ViewController.swift */,
-				DB89E390204CEF9100E5EF57 /* Main.storyboard */,
+				DBE3A0C4204E8A6F000D454B /* Account */,
+				DBE3A0BF204E8A69000D454B /* Friends */,
+				DBE3A0BA204E8A62000D454B /* MyMusic */,
+				DBE3A0B5204E8A56000D454B /* FindMusic */,
+				DBE3A0D3204E9160000D454B /* Welcome */,
+				DBE3A0B2204E88C6000D454B /* Base */,
 				DB89E396204CEF9100E5EF57 /* Assets.xcassets */,
-				DB89E398204CEF9100E5EF57 /* LaunchScreen.storyboard */,
 				DB89E39B204CEF9100E5EF57 /* Info.plist */,
 				DB89E393204CEF9100E5EF57 /* CloudMusic.xcdatamodeld */,
 			);
@@ -126,6 +141,218 @@
 				DB89E3B1204CEF9100E5EF57 /* Info.plist */,
 			);
 			path = CloudMusicUITests;
+			sourceTree = "<group>";
+		};
+		DBE3A0B2204E88C6000D454B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DB89E38C204CEF9100E5EF57 /* AppDelegate.swift */,
+				DBE3A0B3204E8945000D454B /* CMBaseNavigationController.swift */,
+				DBE3A0C9204E8B88000D454B /* CMBaseVC.swift */,
+				DBE3A0DC204E9684000D454B /* CMKeys.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DBE3A0B5204E8A56000D454B /* FindMusic */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3A0B6204E8A56000D454B /* Model */,
+				DBE3A0B7204E8A56000D454B /* VC */,
+				DBE3A0B8204E8A56000D454B /* View */,
+				DBE3A0B9204E8A56000D454B /* VM */,
+			);
+			path = FindMusic;
+			sourceTree = "<group>";
+		};
+		DBE3A0B6204E8A56000D454B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBE3A0B7204E8A56000D454B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3A0CB204E8BC3000D454B /* CMFindMusicVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		DBE3A0B8204E8A56000D454B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBE3A0B9204E8A56000D454B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		DBE3A0BA204E8A62000D454B /* MyMusic */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3A0BB204E8A62000D454B /* Model */,
+				DBE3A0BC204E8A62000D454B /* VC */,
+				DBE3A0BD204E8A62000D454B /* View */,
+				DBE3A0BE204E8A62000D454B /* VM */,
+			);
+			path = MyMusic;
+			sourceTree = "<group>";
+		};
+		DBE3A0BB204E8A62000D454B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBE3A0BC204E8A62000D454B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3A0CD204E8C02000D454B /* CMMyMusicVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		DBE3A0BD204E8A62000D454B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBE3A0BE204E8A62000D454B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		DBE3A0BF204E8A69000D454B /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3A0C0204E8A69000D454B /* Model */,
+				DBE3A0C1204E8A69000D454B /* VC */,
+				DBE3A0C2204E8A69000D454B /* View */,
+				DBE3A0C3204E8A69000D454B /* VM */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		DBE3A0C0204E8A69000D454B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBE3A0C1204E8A69000D454B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3A0CF204E8C17000D454B /* CMFriendVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		DBE3A0C2204E8A69000D454B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBE3A0C3204E8A69000D454B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		DBE3A0C4204E8A6F000D454B /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3A0C5204E8A6F000D454B /* Model */,
+				DBE3A0C6204E8A6F000D454B /* VC */,
+				DBE3A0C7204E8A6F000D454B /* View */,
+				DBE3A0C8204E8A6F000D454B /* VM */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		DBE3A0C5204E8A6F000D454B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBE3A0C6204E8A6F000D454B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3A0D1204E8C2C000D454B /* CMAccountVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		DBE3A0C7204E8A6F000D454B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBE3A0C8204E8A6F000D454B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		DBE3A0D3204E9160000D454B /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3A0D4204E9160000D454B /* Model */,
+				DBE3A0D5204E9160000D454B /* VC */,
+				DBE3A0D6204E9160000D454B /* View */,
+				DBE3A0D7204E9160000D454B /* VM */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		DBE3A0D4204E9160000D454B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBE3A0D5204E9160000D454B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3A0D8204E91B4000D454B /* CMWelcomeVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		DBE3A0D6204E9160000D454B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3A0DA204E94BF000D454B /* CMGuideView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBE3A0D7204E9160000D454B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +462,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB89E39A204CEF9100E5EF57 /* LaunchScreen.storyboard in Resources */,
 				DB89E397204CEF9100E5EF57 /* Assets.xcassets in Resources */,
-				DB89E392204CEF9100E5EF57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +487,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB89E38F204CEF9100E5EF57 /* ViewController.swift in Sources */,
 				DB89E395204CEF9100E5EF57 /* CloudMusic.xcdatamodeld in Sources */,
+				DBE3A0DB204E94BF000D454B /* CMGuideView.swift in Sources */,
+				DBE3A0CC204E8BC3000D454B /* CMFindMusicVC.swift in Sources */,
+				DBE3A0D2204E8C2C000D454B /* CMAccountVC.swift in Sources */,
+				DBE3A0DD204E9684000D454B /* CMKeys.swift in Sources */,
+				DBE3A0D0204E8C17000D454B /* CMFriendVC.swift in Sources */,
+				DBE3A0D9204E91B4000D454B /* CMWelcomeVC.swift in Sources */,
+				DBE3A0CA204E8B88000D454B /* CMBaseVC.swift in Sources */,
 				DB89E38D204CEF9100E5EF57 /* AppDelegate.swift in Sources */,
+				DBE3A0CE204E8C02000D454B /* CMMyMusicVC.swift in Sources */,
+				DBE3A0B4204E8945000D454B /* CMBaseNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,25 +531,6 @@
 			targetProxy = DB89E3AC204CEF9100E5EF57 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DB89E390204CEF9100E5EF57 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB89E391204CEF9100E5EF57 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DB89E398204CEF9100E5EF57 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB89E399204CEF9100E5EF57 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DB89E3B2204CEF9100E5EF57 /* Debug */ = {
@@ -430,6 +644,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69S36A93WW;
 				INFOPLIST_FILE = CloudMusic/Info.plist;
@@ -438,7 +653,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liqunfei.CloudMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,6 +661,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69S36A93WW;
 				INFOPLIST_FILE = CloudMusic/Info.plist;
@@ -454,7 +670,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liqunfei.CloudMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
