@@ -7,31 +7,34 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class CMWelcomeVC: CMBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.orange
+        self.buildUI()
     }
 
     func buildUI() {
         
-        if let notFirstStart = UserDefaults.standard.object(forKey: UserDefaultsKeys.notFirstStart.rawValue) {
-            if notFirstStart is Bool {
-                
-                if notFirstStart as! Bool == true {
-                    
-                }
-                else {
-                    let guideView = CMGuideView()
-                    self.view.addSubview(guideView)
-                }
+        let notFirstStart = CMUserDefaults.object(forKey: UserDefaultsKeys.notFirstStart.rawValue)
+        
+        if notFirstStart != nil {
+            let nfsJson = JSON(notFirstStart!)
+            if nfsJson.boolValue == true {
+                // 非首次启动app
                 
             }
         }
-        
+        else {
+            // 首次启动app
+            // 取消下面一行代码的注释就可以实现只显示一次引导页面
+            // CMUserDefaults.set(true, forKey: UserDefaultsKeys.notFirstStart.rawValue)
+            let guideView = CMGuideView(frame: CGRect(x: 0, y: 0, width: kScreen_Width, height: kScreen_Height))
+            self.view.addSubview(guideView)
+        }
     }
     
     override func didReceiveMemoryWarning() {
