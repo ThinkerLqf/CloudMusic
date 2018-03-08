@@ -14,6 +14,8 @@ class CMWelcomeVC: CMBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.modalTransitionStyle = .flipHorizontal
+        
         self.buildUI()
     }
 
@@ -33,6 +35,9 @@ class CMWelcomeVC: CMBaseVC {
             // 取消下面一行代码的注释就可以实现只显示一次引导页面
             // CMUserDefaults.set(true, forKey: UserDefaultsKeys.notFirstStart.rawValue)
             let guideView = CMGuideView(frame: CGRect(x: 0, y: 0, width: kScreen_Width, height: kScreen_Height))
+            guideView.quitGuide = {
+                self.dismiss(animated: true, completion: nil)
+            }
             self.view.addSubview(guideView)
         }
     }
