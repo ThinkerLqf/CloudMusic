@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9E63A1D03C9185579D4B2A74 /* Pods_CloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9623AA54B11ED042EDE062B9 /* Pods_CloudMusic.framework */; };
+		DB4FE4FF2051126D00977A2D /* CMFindNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4FE4FE2051126D00977A2D /* CMFindNavBar.swift */; };
+		DB4FE501205123B000977A2D /* CMFunctionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4FE500205123B000977A2D /* CMFunctionTool.swift */; };
 		DB89E38D204CEF9100E5EF57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB89E38C204CEF9100E5EF57 /* AppDelegate.swift */; };
 		DB89E395204CEF9100E5EF57 /* CloudMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB89E393204CEF9100E5EF57 /* CloudMusic.xcdatamodeld */; };
 		DB89E397204CEF9100E5EF57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB89E396204CEF9100E5EF57 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		9623AA54B11ED042EDE062B9 /* Pods_CloudMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CCB7314F919CA1772EAD03 /* Pods-CloudMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudMusic/Pods-CloudMusic.release.xcconfig"; sourceTree = "<group>"; };
+		DB4FE4FE2051126D00977A2D /* CMFindNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMFindNavBar.swift; sourceTree = "<group>"; };
+		DB4FE500205123B000977A2D /* CMFunctionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMFunctionTool.swift; sourceTree = "<group>"; };
 		DB89E389204CEF9100E5EF57 /* CloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB89E38C204CEF9100E5EF57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB89E394204CEF9100E5EF57 /* CloudMusic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudMusic.xcdatamodel; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				DBD05F7E204F8BA900D1911D /* Config.swift */,
+				DB4FE500205123B000977A2D /* CMFunctionTool.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 		DBE3A0B8204E8A56000D454B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DB4FE4FE2051126D00977A2D /* CMFindNavBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -588,9 +594,11 @@
 				DBE3A0DB204E94BF000D454B /* CMGuideView.swift in Sources */,
 				DBE3A0CC204E8BC3000D454B /* CMFindMusicVC.swift in Sources */,
 				DBE3A0D2204E8C2C000D454B /* CMAccountVC.swift in Sources */,
+				DB4FE4FF2051126D00977A2D /* CMFindNavBar.swift in Sources */,
 				DBE3A0DD204E9684000D454B /* CMKeys.swift in Sources */,
 				DBD05F7F204F8BA900D1911D /* Config.swift in Sources */,
 				DBE3A0D0204E8C17000D454B /* CMFriendVC.swift in Sources */,
+				DB4FE501205123B000977A2D /* CMFunctionTool.swift in Sources */,
 				DBE3A0D9204E91B4000D454B /* CMWelcomeVC.swift in Sources */,
 				DBE3A0CA204E8B88000D454B /* CMBaseVC.swift in Sources */,
 				DBD05F82204FB72200D1911D /* CMExtension.swift in Sources */,

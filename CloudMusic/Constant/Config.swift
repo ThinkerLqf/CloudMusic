@@ -11,9 +11,14 @@ import UIKit
 
 let CMUserDefaults = UserDefaults.standard
 
+// MARK:- 屏幕尺寸
 let kScreen_Width = UIScreen.main.bounds.size.width
 let kScreen_Height = UIScreen.main.bounds.size.height
 let kScreen_Scale = UIScreen.main.bounds.size.width/375
 
 
 let IS_IPHONE_X = UIScreen.main.bounds.size.height > 736
+
+// MARK:- 颜色
+let Theme_Red = UIColor(r: 211, g: 60, b: 51, alpha: 1)
+

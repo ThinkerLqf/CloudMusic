@@ -13,9 +13,28 @@ class CMFindMusicVC: CMBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.buildUI()
+    }
+    
+    func buildUI() {
+        
+        self.view.addSubview(customNavBar)
+        
     }
 
+    // MARK:- lazy
+    
+    lazy var customNavBar: CMFindNavBar = {
+        let navBar = CMFindNavBar(frame: CGRect(x: 0, y: 0, width: kScreen_Width, height: 64))
+        navBar.backgroundColor = Theme_Red
+        return navBar
+    }()
+    
+    // MARK:- Touch
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

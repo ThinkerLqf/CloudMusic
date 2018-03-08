@@ -13,12 +13,14 @@ class CMBaseVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.isHidden = true
+        
+//        UIApplication.shared.statusBarStyle = .lightContent
         // Do any additional setup after loading the view.
     }
-
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return UIStatusBarStyle.default
+        return UIStatusBarStyle.lightContent
     }
     
     override func didReceiveMemoryWarning() {
