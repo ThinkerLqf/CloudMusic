@@ -14,7 +14,10 @@ class CMWelcomeVC: CMBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // 转场动画
         self.modalTransitionStyle = .flipHorizontal
+        
+        UIApplication.shared.isStatusBarHidden = false
         
         self.buildUI()
     }

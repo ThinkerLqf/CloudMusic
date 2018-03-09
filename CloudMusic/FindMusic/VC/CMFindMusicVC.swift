@@ -12,7 +12,7 @@ class CMFindMusicVC: CMBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.buildUI()
     }
     
@@ -25,7 +25,7 @@ class CMFindMusicVC: CMBaseVC {
     // MARK:- lazy
     
     lazy var customNavBar: CMFindNavBar = {
-        let navBar = CMFindNavBar(frame: CGRect(x: 0, y: 0, width: kScreen_Width, height: 64))
+        let navBar = CMFindNavBar(frame: CGRect(x: 0, y: 0, width: kScreen_Width, height: kNavBar_Height))
         navBar.backgroundColor = Theme_Red
         return navBar
     }()

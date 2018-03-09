@@ -12,7 +12,7 @@ class CMFindNavBar: UIView {
 
     /// 子视图相关
     let subH = 30*kScreen_Scale
-    let subY = 20 + (40 - 30*kScreen_Scale)/2
+    let subY = kStatusBar_Height + (40 - 30*kScreen_Scale)/2
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,6 +33,7 @@ class CMFindNavBar: UIView {
         
     }
     
+    // 编辑状态下
     fileprivate func editingStateUI() {
         
         var cancelRect = self.cancelBtn.frame
@@ -46,6 +47,7 @@ class CMFindNavBar: UIView {
         
     }
     
+    // 非编辑状态下
     fileprivate func normalStateUI() {
         
         var cancelRect = self.cancelBtn.frame
@@ -217,8 +219,10 @@ class CMSearchBar: UIView {
         
         let text = "搜索音乐、视频、电台"
         
+        let tfFont = UIFont.systemFont(ofSize: 14*kScreen_Scale)
+        
         let rect = CMFunctionTool.sizeWithText(text: text,
-                                               font: UIFont.systemFont(ofSize: 16*kScreen_Scale),
+                                               font: tfFont,
                                                size: CGSize(width: self.frame.width - 15*kScreen_Scale,
                                                             height: self.frame.height))
         
@@ -231,7 +235,7 @@ class CMSearchBar: UIView {
         self.tf_OriginRect = tf.frame
         
         tf.placeholder = text
-        tf.font = UIFont.systemFont(ofSize: 16*kScreen_Scale)
+        tf.font = tfFont
         tf.textColor = UIColor.black
         tf.tintColor = Theme_Red
         tf.delegate = self
